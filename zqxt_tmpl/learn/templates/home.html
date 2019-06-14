@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p>{{displayStr}}</p>-->
+
+<!--教材列表:-->
+<!--<br>-->
+<!--{% for item in TutorialList%}-->
+<!--・{{item}}<br>-->
+<!--{% endfor%}-->
+
+<!--站点:{{dict_info.site}} 内容：{{dict_info.content}}-->
+<!--<br>-->
+<!--{% for key, value in dict_info.items %}-->
+<!--{{key}}:{{value}}<br>-->
+<!--{% endfor%}-->
+
+<ul>
+    {% for item in num_list%}
+    <li>
+        {{item}}{% if not forloop.last %},{% endif %}
+    </li>
+    {% empty %}
+    <li>sorry, liebiaowei kong</li>
+    {% endfor %}
+</ul>
+
+{% url 'add' 4 5 %}
+<br>
+
+{% if num_set <= 100 and num_set >= 0 %}
+{{ num_set }}在0到100之间
+{% else %}
+{{ num_set }}不在范围之内！
+{% endif %}
+<br><br>
+
+{% if request.user.is_authenticated %}
+    {{ request.user.username }}，您好！
+{% else %}
+    请登陆，这里放登陆链接
+{% endif %}
+<br><br>
+获取当前网址： {{ request.path }}
+
+<br><br>
+获取当前 GET 参数： {{ request.GET.urlencode }}
+
+<br><br>
+合并到一起用的一个例子：<a href="{{ request.path }}?{{ request.GET.urlencode }}&delete=1">当前网址加参数 delete</a>
+
+
+</body>
+</html>
