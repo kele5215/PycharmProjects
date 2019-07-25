@@ -13,10 +13,11 @@ def translate_google_2(text_str):
     translator = Translator()
     detect_result = translator.detect(text_str)
     if detect_result.lang == 'en':
-        return detect_result.text
+        return text_str
     result = translator.translate(text_str)
     result = translator.translate(result.text, dest='zh-CN')
     # print(result.text)
+    time.sleep(2)
     return result.text
 
 
@@ -40,7 +41,7 @@ def do_excel(path_excel):
         translated_value = translate_google_2(row_item.value)
 
         sheet["G%d" % row_item.row].value = translated_value
-        time.sleep(3)
+        # time.sleep(1.5)
     wb.save(path_excel)
 
 

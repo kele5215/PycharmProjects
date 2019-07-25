@@ -56,7 +56,7 @@ export default {
       url_self: 'http://www.runoob.com',
       message3: 'test shuang xiang bangding',
       message4: 'Runoob!',
-      message5: 'sunoob'
+      message5: 'aunoob'
     }
   },
   methods: {

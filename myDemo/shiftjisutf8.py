@@ -121,7 +121,7 @@ def change_character_code(file_dict):
 if __name__ == '__main__':
 
     # 目標フォルダ初期化
-    src_folder = r'C:\work\developer\3.1.4JP(A-Law)\Database'
+    src_folder = r'C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database'
 
     # 目標フォルダ配下から指定接尾語ファイルを取得する
     result_list_file = find_sql_cmd(src_folder)

@@ -1,0 +1,103 @@
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\ConstantCode.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateConstantCodeFunction.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateDatabase.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateDataProcedure.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateFunction.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateFunctionUseView.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateIndexedView.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateProcedure.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateTable.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\CreateView.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupData (Client).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupData (Common).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupData (RealCall).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupData (SpeechVisualizer).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupData (UnitTest).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupInstance (Login).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupInstance (WindowsAuthentication).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupInstance.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupObject.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\SetupTable.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0001 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0002 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0003 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0004 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0005 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0006 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0007 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0008 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0009 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0010 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0011 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0012 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0013 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0014 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0015 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0016 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0017 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0018 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0019 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0020 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0021 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0022 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0023 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0024 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0025 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0026 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0027 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0028 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0029 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0030 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0031 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\test_aspx-0621-sql - コピー\Database\DDL\SQLServer\Patches\0032 (Object).zh-CN.sqlC:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\ConstantCode.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateConstantCodeFunction.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateDatabase.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateDataProcedure.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateFunction.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateFunctionUseView.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateIndexedView.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateProcedure.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateTable.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\CreateView.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupData (Client).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupData (Common).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupData (RealCall).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupData (SpeechVisualizer).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupData (UnitTest).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupInstance (Login).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupInstance (WindowsAuthentication).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupInstance.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupObject.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\SetupTable.zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0001 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0002 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0003 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0004 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0005 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0006 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0007 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0008 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0009 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0010 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0011 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0012 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0013 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0014 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0015 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0016 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0017 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0018 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0019 (Database).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0020 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0021 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0022 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0023 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0024 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0025 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0026 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0027 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0028 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0029 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0030 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0031 (Object).zh-CN.sql
+C:\Users\h-zhang\Desktop\temp\新しいフォルダー\Database\DDL\SQLServer\Patches\0032 (Object).zh-CN.sql
