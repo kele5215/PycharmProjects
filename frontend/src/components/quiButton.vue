@@ -1,5 +1,6 @@
 <template>
   <button class="qui-btn" v-on:click="btnClickEvent">
+    <slot name="icon"></slot>
     <span>{{ msg }}</span>
   </button>
 </template>

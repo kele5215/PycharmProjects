@@ -3,7 +3,9 @@
     <!--使用-->
     <qui-btn class="small"></qui-btn>
     <qui-btn v-on:btnClickEvent="doSth1" msg="确定" class="small"></qui-btn>
-    <qui-btn v-on:btnClickEvent="doSth2" msg="取消" class="small"></qui-btn>
+    <qui-btn v-on:btnClickEvent="doSth2" msg="下载" class="small">
+      <img slot="icon" class="ico" src="../assets/logo.png" />
+    </qui-btn>
   </div>
 </template>
 
