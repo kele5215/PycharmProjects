@@ -8,6 +8,7 @@ import Router from 'vue-router'
 
 import index from '../pages/index.vue'
 import pageQuiButton from '../pages/pageQuiButton.vue'
+import pageQuiNav from '../pages/pageQuiNav.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/btn',
       name: 'btn',
       component: pageQuiButton
+    },
+    {
+      path: '/nav',
+      name: 'nav',
+      component: pageQuiNav
     }
   ]
 })
