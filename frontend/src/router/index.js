@@ -10,6 +10,7 @@ import index from '../pages/index.vue'
 import pageQuiButton from '../pages/pageQuiButton.vue'
 import pageQuiNav from '../pages/pageQuiNav.vue'
 import pageQuiList from '../pages/pageQuiList.vue'
+import pagePractise from '../pages/pagePractise.vue'
 
 Vue.use(Router)
 
@@ -54,6 +55,11 @@ export default new Router({
       path: '/list',
       name: 'list',
       component: pageQuiList
+    },
+    {
+      path: '/practise',
+      name: 'practise',
+      component: pagePractise
     }
   ]
 })
