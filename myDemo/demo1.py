@@ -1,3 +1,5 @@
+# -* - coding: UTF-8 -* -
+import sys
 from sys import path
 import numpy as np
 
@@ -8,7 +10,6 @@ print("你好 世界!")
 zhushi1
 zhushi2
 '''
-
 """
 zhisdlfj
 sdfljsldf
@@ -34,9 +35,8 @@ print(r"hello \n runoob")
 # 等待用户输入********************************
 
 # 同一行显示多条语句**************************
-import sys;
 
-x = 'runoob';
+x = 'runoob'
 sys.stdout.write(x + '\n')
 # 同一行显示多条语句**************************
 
@@ -51,7 +51,6 @@ print(x, end="")
 print(y, end="")
 print()
 # 实现不换行需要在变量末尾加上 end=""**********
-
 
 # import 与 from...import**********************
 
@@ -71,7 +70,6 @@ print(isinstance(a, int))
 # del a, b, c, d
 print(type(b), type(c), type(d))
 # Number（数字）*******************************
-
 
 # List（列表）********************************
 listSelf = ["abcd", 786, 2.23, "runOob", 70.2]
@@ -124,7 +122,7 @@ dictSelf2 = dict([("Runoob", 1), ("Google", 2), ("Taobao", 3)])
 print(dictSelf2)
 dictSelf2 = dict(Runoob=4, Google=5, Taobao=6)
 print(dictSelf2)
-dictSelf2 = {x: x ** 2 for x in (1, 3, 5)}
+dictSelf2 = {x: x**2 for x in (1, 3, 5)}
 print(dictSelf2)
 # Dictionary（字典）***************************
 
@@ -133,11 +131,11 @@ str1 = 2
 print(hex(str1))
 # Python数据类型转换***************************
 
-
-list_float_arr = [[0.1, 0.2, 0.3],
-                  [1.1, 1.2, 1.3],
-                  [2.1, 2.2, 2.3],
-                  ]
+list_float_arr = [
+    [0.1, 0.2, 0.3],
+    [1.1, 1.2, 1.3],
+    [2.1, 2.2, 2.3],
+]
 
 for x in range(len(list_float_arr)):
     for y in range(len(list_float_arr)):
@@ -148,10 +146,11 @@ for x in range(len(list_float_arr)):
 
 print(list_float_arr)
 
-list_float_arr_2 = [[0.1, 0.2, 0.3],
-                  [1.1, 1.2, 1.3],
-                  [2.1, 2.2, 2.3],
-                  ]
+list_float_arr_2 = [
+    [0.1, 0.2, 0.3],
+    [1.1, 1.2, 1.3],
+    [2.1, 2.2, 2.3],
+]
 X1 = np.array(list_float_arr_2)
 X2 = X1
 print("list_float_arr_np: ", X2 + X1)
