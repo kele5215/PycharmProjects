@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.conf.urls import include
 from django.contrib import admin
 from django.views.generic.base import TemplateView
-# from polls import views
+import polls.urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^index', views.index),
+    url(r'^api/', include(polls.urls)),
     url(r'^$', TemplateView.as_view(template_name="index.html")),
 ]
