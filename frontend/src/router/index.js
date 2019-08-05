@@ -11,6 +11,7 @@ import pageQuiButton from '../pages/pageQuiButton.vue'
 import pageQuiNav from '../pages/pageQuiNav.vue'
 import pageQuiList from '../pages/pageQuiList.vue'
 import pagePractise from '../pages/pagePractise.vue'
+import pageBookCrud from '../pages/pageBookCrud.vue'
 
 Vue.use(Router)
 
@@ -60,6 +61,11 @@ export default new Router({
       path: '/practise',
       name: 'practise',
       component: pagePractise
+    },
+    {
+      path: '/bookCrud',
+      name: 'bookCrud',
+      component: pageBookCrud
     }
   ]
 })

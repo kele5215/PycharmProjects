@@ -1,9 +1,11 @@
-from django.shortcuts import render
-from polls import models
-from django.views.decorators.http import require_http_methods
-from django.core import serializers
 import json
+
+from django.core import serializers
 from django.http import JsonResponse
+from django.shortcuts import render
+from django.views.decorators.http import require_http_methods
+
+from polls import models
 
 # Create your views here.
 user_list = [

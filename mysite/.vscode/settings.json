@@ -1,0 +1,12 @@
+{
+  "python.venvPath": "C:\\work\\tool\\Anaconda3\\envs\\",
+  "python.pythonPath": "C:\\work\\tool\\Anaconda3\\envs\\django_env\\python.exe",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "yapf",
+  "python.linting.pylintEnabled": false,
+  "python.autoComplete.addBrackets": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+}
