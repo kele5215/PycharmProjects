@@ -63,37 +63,60 @@ export default {
     }
   },
 
-  mounted: function () {
-    this.showBooks()
-  },
-
   methods: {
-    addBook () {
-      this.$axios.get('http://127.0.0.1:8000/api/add_book?book_name=' + this.bookNmInput)
-        .then((response) => {
+    // showBooks: function () {
+    //   this.$http.get('http://127.0.0.1:8000/api/show_books')
+    //     .then(function (response) {
+    //       console.log(response)
+    //       var res = response.data
+    //       if (res.error_num === 0) {
+    //         // this.bookList_Json = response['list']
+    //         console.log(res.msg)
+    //       } else {
+    //         // this.$message.error('查询书籍失败')
+    //         console.log(res.msg)
+    //       }
+    //     })
+    //     .catch(error => console.log(error))
+    //   console.log('function showBooks')
+    // },
+    showBooks: function (_self) {
+      // var _self = this
+      _self.$http.get('http://127.0.0.1:8000/api/show_books')
+        .then(function (response) {
+          console.log(response)
           var res = response.data
           if (res.error_num === 0) {
-            this.showBooks()
-          } else {
-            // this.$message.error('新增书籍失败，请重试')
-            console.log(res['msg'])
-          }
-        })
-    },
-    showBooks () {
-      this.$axios.get('http://127.0.0.1:8000/api/show_books')
-        .then((response) => {
-          // var res = response
-          console.log(response)
-          if (response.data.error_num === 0) {
-            this.bookList_Json = response['list']
+            _self.$options.data.bookList_Json = res.list
+            console.log(res.msg)
           } else {
             // this.$message.error('查询书籍失败')
-            console.log(response['msg'])
+            console.log(res.msg)
           }
         })
+        .catch(error => console.log(error))
+    },
+    addBook: function () {
+      var _self = this
+      this.$http.get('http://127.0.0.1:8000/api/add_book?book_name=' + this.bookNmInput)
+        .then(function (response) {
+          console.log(response)
+          var res = response.data
+          if (res.error_num === 0) {
+            console.log(res.msg)
+            _self.$options.methods.showBooks(_self)
+          } else {
+            // this.$message.error('新增书籍失败，请重试')
+            console.log(res.msg)
+          }
+        })
+        .catch(error => console.log(error))
     }
   }
+
+  // mounted: function () {
+  //   this.$options.methods.showBooks()
+  // }
 }
 </script>
 
