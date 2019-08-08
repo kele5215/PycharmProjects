@@ -1,6 +1,6 @@
 {
-  "python.venvPath": "C:\\work\\tool\\Anaconda3\\envs\\",
-  "python.pythonPath": "C:\\work\\tool\\Anaconda3\\envs\\django_env\\python.exe",
+  "python.venvPath": "d:\\Anaconda3\\envs\\",
+  "python.pythonPath": "d:\\Anaconda3\\envs\\django_env\\python.exe",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "python.linting.flake8Enabled": true,
