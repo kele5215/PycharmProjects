@@ -74,3 +74,36 @@ fruit.pop(4)
 print(fruit)
 
 print(fruit.get(1))
+
+for k, v in fruit.items():
+    print(k, v)
+
+for k in fruit.keys():
+    print(k)
+
+for v in fruit.values():
+    print(v)
+
+# 集合
+fruit = set(['apple', 'orange', 'pear'])
+print(fruit)
+
+# add
+fruit.add('grape')
+print(fruit)
+
+fruit.update(['peach', 'banana'])
+print(fruit)
+
+# delete
+fruit.remove('banana')
+print(fruit)
+
+fruit.pop()
+print(fruit)
+
+num1 = set([11, 22, 33, 44])
+num2 = set([33, 44, 55, 66])
+print(num1.union(num2))
+print(num1.difference(num2))
+print(num1.intersection(num2))
