@@ -20,9 +20,9 @@
           <th v-for="colNm in colNm_Json" :key="colNm">{{ colNm }}</th>
         </tr>
         <tr v-for="book in bookList_Json" :key="book">
-          <td>{{ book.id }}</td>
-          <td>{{ book.book_name }}</td>
-          <td>{{ book.add_time }}</td>
+          <td>{{ book.pk }}</td>
+          <td>{{ book.fields.book_name }}</td>
+          <td>{{ book.fields.add_time }}</td>
         </tr>
       </table>
     </div>
@@ -37,28 +37,28 @@ export default {
       bookNmInput: '',
       colNm_Json: ['编号', '书名', '添加时间'],
       bookList_Json: [
-        {
-          id: 1,
-          book_name: 'iphone 8',
-          add_time: 5099
-        },
-        {
-          id: 2,
-          book_name: 'iphone xs',
-          add_time: 8699
+        // {
+        //   id: 1,
+        //   book_name: 'iphone 8',
+        //   add_time: 5099
+        // },
+        // {
+        //   id: 2,
+        //   book_name: 'iphone xs',
+        //   add_time: 8699
 
-        },
-        {
-          id: 3,
-          book_name: 'iphone xr',
-          add_time: 6499
+        // },
+        // {
+        //   id: 3,
+        //   book_name: 'iphone xr',
+        //   add_time: 6499
 
-        },
-        {
-          id: 4,
-          book_name: 'iphone xs max',
-          add_time: 10299
-        }
+        // },
+        // {
+        //   id: 4,
+        //   book_name: 'iphone xs max',
+        //   add_time: 10299
+        // }
       ]
     }
   },
@@ -83,11 +83,11 @@ export default {
     showBooks: function (_self) {
       // var _self = this
       _self.$http.get('http://127.0.0.1:8000/api/show_books')
-        .then(function (response) {
+        .then((response) => {
           console.log(response)
           var res = response.data
           if (res.error_num === 0) {
-            _self.$options.data.bookList_Json = res.list
+            _self.bookList_Json = res.list
             console.log(res.msg)
           } else {
             // this.$message.error('查询书籍失败')
@@ -97,14 +97,15 @@ export default {
         .catch(error => console.log(error))
     },
     addBook: function () {
-      var _self = this
+      // var _self = this
       this.$http.get('http://127.0.0.1:8000/api/add_book?book_name=' + this.bookNmInput)
-        .then(function (response) {
+        // .then(function (response) {
+        .then((response) => {
           console.log(response)
           var res = response.data
           if (res.error_num === 0) {
             console.log(res.msg)
-            _self.$options.methods.showBooks(_self)
+            this.$options.methods.showBooks(this)
           } else {
             // this.$message.error('新增书籍失败，请重试')
             console.log(res.msg)
@@ -112,11 +113,11 @@ export default {
         })
         .catch(error => console.log(error))
     }
-  }
+  },
 
-  // mounted: function () {
-  //   this.$options.methods.showBooks()
-  // }
+  mounted: function () {
+    this.$options.methods.showBooks(this)
+  }
 }
 </script>
 
