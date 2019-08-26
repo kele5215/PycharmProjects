@@ -2,8 +2,9 @@
 import sys
 from sys import path
 import numpy as np
+import keyword
 
-print("你好 世界!")
+print(keyword.kwlist)
 
 # 注释*****************************
 '''
@@ -154,3 +155,15 @@ list_float_arr_2 = [
 X1 = np.array(list_float_arr_2)
 X2 = X1
 print("list_float_arr_np: ", X2 + X1)
+
+age = 22
+print('我今年%d岁' % age)
+print(9 // 2)
+
+name = input('qing shu ru mingzi: ')
+password = input('qing shu ru mi ma: ')
+
+if name=='root' and password == '123':
+    print('root login success')
+else:
+    print('cuowu')

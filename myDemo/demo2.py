@@ -52,3 +52,36 @@ for n in range(2, 100):
         print(n, "shi zhi shu")
 
 # while 循环*********************************
+
+# 实例:求1到100的总和
+i = 1
+sum = 0
+while i <= 100:
+    sum = sum + i
+    i += 1
+print('zhong he wei %d' % sum)
+
+# 实例： 九九乘法表
+i = 1
+while i <= 9:
+    j = 1
+    while j <= i:
+        print('%d*%d=%-2d ' % (j, i, j * i), end='')
+        j += 1
+    print('\n')
+    i += 1
+
+# 1.字符串常用功能
+name = 'derek'
+print(name.capitalize())
+print(name.count('e'))
+print(name.center(10, '*'))
+print(name.endswith('k'))
+
+print('257'.isdigit())
+print('+'.join(['1', '2', '3']))
+print('\n23423'.strip())
+print("1+2+3+4".split("+"))
+
+msg = 'my name is {name} and i adn {age} old'
+print(msg.format(name='zhang', age=13))
