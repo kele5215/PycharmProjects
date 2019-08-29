@@ -45,14 +45,16 @@ def load_ini(locationini):
     ini_editor.modify_profile_str("Parameters", "mtyyyyyy", "5555")
 
     # 修正後再取り込み
-    sensitivity_vad_bic = float(ini_editor.get_profile_str("Parameters", "mtyyyyyy"))
+    sensitivity_vad_bic = float(
+        ini_editor.get_profile_str("Parameters", "mtyyyyyy"))
     print(sensitivity_vad_bic)
 
     ini_editor = IniEditor(locationini)
     ini_editor.modify_profile_str("ParametersXXXX", "mtyyyyyy", "66666")
 
     # 修正後再取り込み
-    sensitivity_vad_bic = float(ini_editor.get_profile_str("ParametersXXXX", "mtyyyyyy"))
+    sensitivity_vad_bic = float(
+        ini_editor.get_profile_str("ParametersXXXX", "mtyyyyyy"))
     print(sensitivity_vad_bic)
 
     #  ------------------------------------------------------------------------

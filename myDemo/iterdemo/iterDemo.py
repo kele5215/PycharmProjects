@@ -10,7 +10,7 @@
 #
 # 字符串，列表或元组对象都可用于创建迭代器：
 
-import sys
+# import sys
 
 # listSelf = [1, 2, 3, 4]
 # iterSelf = iter(listSelf)
@@ -29,7 +29,7 @@ import sys
 # print("")
 import support
 import fibonacciFunc
-import filedemo
+# import filedemo
 
 
 class MyNumbers:
@@ -140,15 +140,11 @@ fibonacciFunc.fib(100)
 fList = fibonacciFunc.fib2(100)
 print(fList)
 print(fibonacciFunc.__name__)
+
 if __name__ == '__main__':
-   print('程序自身在运行')
+    print('程序自身在运行')
 else:
-   print('我来自另一模块')
+    print('我来自另一模块')
 
 print(dir(fibonacciFunc))
 print(dir())
-
-
-
-
-
