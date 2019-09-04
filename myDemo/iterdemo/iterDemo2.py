@@ -75,3 +75,34 @@ def timer(func):
         print("run time %s" % (stop_time - start_time))
 
     return wrapper
+
+
+# 装饰有参函数
+def timer2(func):
+    def deco(*args, **kwargs):
+        start_time = time.time()
+        func(*args, **kwargs)
+        stop_time = time.time()
+        print(stop_time - start_time)
+
+    return deco
+
+
+# 更复杂的装饰器
+def timer3(parameter):
+    def outer_wrapperr(func):
+        def wrapper(*args, **kwargs):
+            if parameter == "task1":
+                start = time.time()
+                func(*args, **kwargs)
+                stop = time.time()
+                print("the task1 run time is :", stop - start)
+            elif parameter == "task2":
+                start = time.time()
+                func(*args, **kwargs)
+                stop = time.time()
+                print("the task2 run time is :", stop - start)
+
+        return wrapper
+
+    return outer_wrapperr

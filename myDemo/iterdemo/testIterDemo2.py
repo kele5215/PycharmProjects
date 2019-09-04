@@ -10,7 +10,8 @@
 #
 # 字符串，列表或元组对象都可用于创建迭代器：
 
-from iterDemo2 import iter_base, generator, generator2, generator_list, timer
+from iterDemo2 import iter_base, generator, generator2, generator_list
+from iterDemo2 import timer, timer2, timer3
 import time
 
 
@@ -18,6 +19,24 @@ import time
 def test():
     print("in the test")
     time.sleep(1)
+
+
+@timer2
+def test2(parameter):
+    print("test2 is running")
+    time.sleep(1)
+
+
+@timer3(parameter='task1')
+def task1():
+    time.sleep(2)
+    print("in the task1")
+
+
+@timer3(parameter='task2')
+def task2():
+    time.sleep(2)
+    print("in the task2")
 
 
 if __name__ == '__main__':
@@ -43,3 +62,12 @@ if __name__ == '__main__':
 
     # 简单装饰器
     test()
+    print('\n')
+
+    # 装饰有参函数
+    test2("添加参数")
+    print('\n')
+
+    # 更复杂的装饰器
+    task1()
+    task2()
