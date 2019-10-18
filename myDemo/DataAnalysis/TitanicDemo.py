@@ -16,7 +16,7 @@ sns.set_style('whitegrid')
 
 # get titanic & test csv files as a DataFrame
 titanic_df = pd.read_csv(
-    r"C:\work\developer\PycharmProjects\myDemo\DataAnalysis\train.csv",
+    r"C:\work\developer\PycharmProjects\myDemo\DataAnalysis\data\train.csv",
     encoding='utf-8')
 """
 ② 簡単にデータの状態を確認する（行数列数カウント・データの選択的表示・重複の有無など）
@@ -90,4 +90,84 @@ titanic_df.info()
 # titanic_df.set('Name', inplace=True)
 
 # カラム名を変更する（Name を Full Name に変換）
-titanic_df.rename(columns={'Name', 'Full Name'}, axis='columns')
+df_org = titanic_df.copy()
+df_org.rename(columns={'Name': 'Full Name'}, inplace=True)
+df_org.head(3)
+
+# 臨時テストデータ用
+list_l = [[1, 3, 3, 5, 4], [11, 7, 15, 13, 9], [4, 2, 7, 9, 3],
+          [15, 11, 12, 6, 11]]
+index = ["2018-07-01", "2018-07-02", "2018-07-03", "2018-07-04"]
+df = pd.DataFrame(list_l, index=index, columns=['a', 'b', 'c', 'd', 'e'])
+df.head()
+
+# カラム名を変更する（Name を Full Name に変換）
+df_rename = df.rename({'a': 'A'}, axis='columns')
+df_rename.head()
+
+# https://vimsky.com/article/3838.html
+# set_index reset_index
+# set_index 本身会生成一个新的df 如果设定 inplace=True 会改变既有的df的结构
+print(df_rename.index)
+indexed1 = df_rename.set_index('A', inplace=True)
+print(indexed1)
+df_rename.head()
+
+# set_index 本身会生成一个新的df 如果不设定 inplace=True bu会改变既有的df的结构
+indexed2 = df_rename.set_index(['b', 'c'])
+print(indexed2)
+indexed2.head()
+df_rename.head()
+
+# http://www.voidcn.com/article/p-zqcfzovw-byr.html
+# 作用：reset_index可以还原索引为普通列，重新变为默认的整型索引
+# df_rename.reset_index()
+
+# 多级索引
+index = pd.MultiIndex.from_product([['TX', 'FL', 'CA'], ['North', 'South']],
+                                   names=['State', 'Direction'])
+df = pd.DataFrame(index=index,
+                  data=numpy.random.randint(0, 10, (6, 4)),
+                  columns=list('abcd'))
+df.head()
+
+# 'Cabin'列を降順で並び替えもできる
+titanic_df.sort_values(by='Cabin', ascending=True).head()
+
+# sort_valuesは複数の列に対しても実行できる
+titanic_df.sort_values(['Cabin', 'Sex'], ascending=True).head()
+
+# テストデータ日付を含む
+lunch_df = pd.read_csv(
+    r"C:\work\developer\PycharmProjects\myDemo\DataAnalysis\data\lunch_box.csv",
+    encoding='utf-8')
+lunch_df.head()
+
+print('dataframeの行数・列数の確認==>\n', lunch_df.shape)
+print('indexの確認==>\n', lunch_df.index)
+print('columnの確認==>\n', lunch_df.columns)
+print('dataframeの各列のデータ型を確認==>\n', lunch_df.dtypes)
+
+# datetime列をindexにする
+lunch_df.set_index('datetime', inplace=True)
+lunch_df.head()
+
+# カラム名を変更する（y を sales に変換）
+lunch_df.rename(columns={'y': 'sales'}, inplace=True)
+lunch_df.head()
+
+# 'sales'列を降順で並び替えもできる
+lunch_df.sort_values(by="sales", ascending=True).head()  # ascending=Trueで昇順
+
+# sort_valuesは複数の列に対しても実行できる
+lunch_df.sort_values(['sales', 'temperature'],
+                     ascending=False).head()  # ascending=Falseで昇順
+
+# indexのデータ型を確認してみる
+lunch_df.index
+
+# indexであるdatetimeのdtype='object' を dtype='datetime64[ns]' に変更
+lunch_df.index = pd.to_datetime(lunch_df.index, format='%Y-%m-%d')
+
+# indexのデータ型を確認してみる
+lunch_df.index
