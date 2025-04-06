@@ -1,0 +1,16 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# 先复制requirements.txt并安装依赖
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 安装开发工具
+RUN pip install debugpy
+
+# 暴露调试端口
+EXPOSE 5000 5678
+
+# 启动调试
+CMD ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "app.py"]
